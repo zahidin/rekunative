@@ -3,16 +3,15 @@ import {createStackNavigator} from 'react-navigation'
 
 const initialRouteName = "Home"
 
-const AppNavigator = createStackNavigator(
-    {
-      Home
-    },
-    {
-      Login
-    },
-    {
-      initialRouteName
-    }
-);
+const AppNavigator = createStackNavigator({
+  Home: {
+    screen: Home    
+  },
+  Login: {
+    screen: Login    
+  },
+}, {
+  initialRouteName
+});
 
 export default AppNavigator
