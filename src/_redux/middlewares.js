@@ -1,6 +1,4 @@
-import {
-    createReactNavigationReduxMiddleware,
-  } from 'react-navigation-redux-helpers';
+import {createReactNavigationReduxMiddleware} from 'react-navigation-redux-helpers';
 
 const middleware = createReactNavigationReduxMiddleware(
     "root",

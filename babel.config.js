@@ -3,7 +3,7 @@ module.exports = {
   plugins: [
     ["module-resolver", {
       alias: {
-        "@screens": ([, name]) => `./src/screens/${name}/${name}.js`
+        "@screens": () => `./src/screens`
       }
     }]
   ]
