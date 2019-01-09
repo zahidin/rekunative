@@ -1,10 +1,10 @@
 import {createStore, applyMiddleware} from "redux"
-import appReducer from './reducers'
+import reducers from './reducers'
 import middlewares from './middlewares'
 
 const store = createStore(
-    appReducer,
-    applyMiddleware(middlewares)
+    reducers,
+    middlewares
 )
 
 export default store

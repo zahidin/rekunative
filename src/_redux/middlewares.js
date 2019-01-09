@@ -1,8 +1,15 @@
-import {createReactNavigationReduxMiddleware} from 'react-navigation-redux-helpers';
+import {createReactNavigationReduxMiddleware} from 'react-navigation-redux-helpers'
+import {createLogger} from 'redux-logger'
+import {applyMiddleware} from 'redux'
 
-const middleware = createReactNavigationReduxMiddleware(
+const navMiddleware = createReactNavigationReduxMiddleware(
     "root",
     state => state.nav,
-);
+)
 
-export default middleware
+const middlewares = applyMiddleware(
+    navMiddleware,
+    createLogger()
+)
+
+export default middlewares
