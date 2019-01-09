@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 
 import {allTodos} from '../_redux/actions/todo'
 
-class TodoList extends Component {
+export class TodoList extends Component {
 
     componentDidMount(){
         this.props.allTodos()
@@ -28,7 +28,9 @@ class TodoList extends Component {
 
 }
 
-const mapStateToProps = (state)=> state
+const mapStateToProps = ({todo})=> ({
+    todo
+})
 
 const mapDispatchToProps = {
     allTodos
