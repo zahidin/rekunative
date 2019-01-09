@@ -3,8 +3,7 @@ module.exports = {
   plugins: [
     ["module-resolver", {
       alias: {
-        // "@screens": () => `./src/screens`,
-        // "@actions": ([, name]) => `./src/_redux/actions/${name}.js`,
+        // "@actions": `./src/_redux/actions`
       }
     }]
   ]

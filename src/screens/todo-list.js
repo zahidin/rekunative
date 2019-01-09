@@ -2,12 +2,12 @@ import React, {Component} from 'react'
 import {Container, Content, List, ListItem, Text} from 'native-base'
 import {connect} from 'react-redux'
 
-import {todoAll} from '@actions/todo'
+import {allTodos} from '../_redux/actions/todo'
 
 class TodoList extends Component {
 
     componentDidMount(){
-        this.props.todoAll()
+        this.props.allTodos()
     }
 
     render(){
@@ -31,7 +31,7 @@ class TodoList extends Component {
 const mapStateToProps = (state)=> state
 
 const mapDispatchToProps = {
-    todoAll
+    allTodos
 }
 
 export default connect(

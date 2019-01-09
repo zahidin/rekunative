@@ -7,7 +7,7 @@ const initialState = {
 
 export default function todoReducer(state=initialState, action){
     switch (action.type) {
-        case 'TODO_ALL':
+        case 'ALL_TODOS':
             return {...state, results: action.payload}    
         default:
             return state
