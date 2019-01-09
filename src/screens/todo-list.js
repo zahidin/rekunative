@@ -16,8 +16,8 @@ class TodoList extends Component {
                 <Content>
                     <List>
                         {this.props.todo.results.map(r=>(
-                            <ListItem>
-                                <Text>{r.id}</Text>
+                            <ListItem key={r.id}>
+                                <Text>{r.title}</Text>
                             </ListItem>
                         ))}
                     </List>
