@@ -1,6 +1,8 @@
 import {createReactNavigationReduxMiddleware} from 'react-navigation-redux-helpers'
-import {createLogger} from 'redux-logger'
 import {applyMiddleware} from 'redux'
+import {createLogger} from 'redux-logger'
+import promiseMiddleware from 'redux-promise-middleware'
+import thunk from 'redux-thunk'
 
 const navMiddleware = createReactNavigationReduxMiddleware(
     "root",
@@ -9,7 +11,9 @@ const navMiddleware = createReactNavigationReduxMiddleware(
 
 const middlewares = applyMiddleware(
     navMiddleware,
-    createLogger()
+    createLogger(),
+    promiseMiddleware(),
+    thunk
 )
 
 export default middlewares

@@ -1,10 +1,14 @@
 import React, {Component} from 'react'
-import {Container, Content, List, ListItem, Text} from 'native-base'
+import {Container, Content, List, ListItem, Text, Icon, Fab} from 'native-base'
 import {connect} from 'react-redux'
 
-import {allTodos} from '../_redux/actions/todo'
+import {allTodos, addTodo} from '../_redux/actions/todo'
 
 export class TodoList extends Component {
+
+    static navigationOptions = {
+        title: 'Todo',
+    }    
 
     componentDidMount(){
         this.props.allTodos()
@@ -22,6 +26,12 @@ export class TodoList extends Component {
                         ))}
                     </List>
                 </Content>
+                <Fab
+                    style={{ backgroundColor: '#5067FF' }}
+                    position="bottomRight"
+                    onPress={() => this.props.navigation.navigate('TodoAdd')}>
+                    <Icon name="add" />                    
+                </Fab>
             </Container>
         )        
     }
@@ -33,7 +43,8 @@ const mapStateToProps = ({todo})=> ({
 })
 
 const mapDispatchToProps = {
-    allTodos
+    allTodos,
+    addTodo
 }
 
 export default connect(
