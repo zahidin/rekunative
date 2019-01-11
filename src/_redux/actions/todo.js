@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = `http://192.168.8.10:3333/api/v1`
+import { API_URL } from 'react-native-dotenv'
 
 export const allTodos = ()=> ({
     type: 'ALL_TODOS',
