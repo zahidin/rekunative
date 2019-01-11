@@ -32,14 +32,14 @@ We use very simple structure to get started with
 ```
 |-- rekurn-generator
 |-- src
-|-- _navigators
-|-- _redux
-    |-- actions
-    |-- reducers
-    |-- middlewares.js
-    |-- store.js
-|-- components
-|-- screens
+    |-- _navigators
+    |-- _redux
+        |-- actions
+        |-- reducers
+        |-- middlewares.js
+        |-- store.js
+    |-- components
+    |-- screens
 |-- App.js
 |-- index.js
 ```
