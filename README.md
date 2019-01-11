@@ -29,6 +29,7 @@ You can set any configuration inside .env file, here are the list that you can s
 
 We use very simple structure to get started with
 
+```
 .
 +-- rekurn-generator
 +-- src
@@ -42,6 +43,7 @@ We use very simple structure to get started with
 |   +-- screens
 +-- App.js
 +-- index.js
+```
 
 ### Generators
 
