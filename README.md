@@ -65,7 +65,7 @@ We use very simple structure to get started with
 |-- index.js
 ```
 
-### Generators
+### Generators (COMING SOON)
 
 **1. Generate a new Screen**
 
