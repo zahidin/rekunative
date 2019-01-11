@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Container, Content, List, ListItem, Text, Icon, Fab} from 'native-base'
 import {connect} from 'react-redux'
 
-import {allTodos, addTodo} from '../_redux/actions/todo'
+import {allTodos} from '../_redux/actions/todo'
 
 export class TodoList extends Component {
 
@@ -43,8 +43,7 @@ const mapStateToProps = ({todo})=> ({
 })
 
 const mapDispatchToProps = {
-    allTodos,
-    addTodo
+    allTodos
 }
 
 export default connect(
