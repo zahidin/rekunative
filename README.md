@@ -25,6 +25,27 @@ You can set any configuration inside .env file, here are the list that you can s
 - USE_GRAPHQL: true/false (boolean)
 - MODE: debug/production (String) **debug will activate Redux Logger**
 
+### Installation
+
+Make sure React Native installed on your system, then:
+
+- Install Dependencies
+
+```
+$ npm install
+```
+
+- Open your emulator and Run project
+
+```
+$ react-native run-android 
+#or
+$ react-native run-ios
+```
+
+- **Optionally** you can use our server example to get you quickly getting started. Here is the repository https://github.com/rekeningku/rekunative-server
+
+
 ### Code Structure
 
 We use very simple structure to get started with
