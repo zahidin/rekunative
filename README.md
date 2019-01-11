@@ -20,10 +20,10 @@ Welcome to **RekuNative**! RekuNative is a boilerplate and generator for React N
 ### Configuration
 
 You can set any configuration inside .env file, here are the list that you can set:
-- API_URL: <port String>
-- USE_REDUX: <boolean>
-- USE_GRAPHQL: <boolean>
-- MODE: <debug/production String> debug will activate Redux Logger
+- API_URL: port (String)
+- USE_REDUX: true/false (boolean)
+- USE_GRAPHQL: true/false (boolean)
+- MODE: debug/production (String) **debug will activate Redux Logger**
 
 ### Code Structure
 
