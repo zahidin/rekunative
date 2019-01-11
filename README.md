@@ -46,46 +46,46 @@ We use very simple structure to get started with
 
 ### Generators
 
-1. Generate a new Screen
+**1. Generate a new Screen**
 
-Usage:
-```rekunative make:screen <name> [options]```
+    Usage:
+    ```rekunative make:screen <name> [options]```
 
-Arguments:
-- name: Name of the Screen
+    Arguments:
+    - name: Name of the Screen
 
-Options:
-- -t <value>: Template name that you want to use (signin1, signin2, signup1, signup2, forgetpassword, profile1, profile2, profile3, profilesetting, notification, contact, article1, article2, article3, articleview1, articleview2, chat, chatlist, comment, dashboard1, dashboard2, onboarding1, onboarding2, creditcard, gridmenu1, gridmenu2, listmenu, sidemenu, setting, product1, product2, transaction1, transaction2, illustration) 
-- -redux-plain: Generate Redux that consist of action, and reducer that using plain array data, and plain reducer naming convention, **this will also make your generated screen is using Redux connect**
-- -redux-promise: Generate Redux that consist of action, and reducer that using redux-promise-middleware, **this will also make your generated screen is using Redux connect**
-- -redux-thunk: Generate Redux that consist of action, and reducer that using redux thunk, **this will also make your generated screen is using Redux connect**
-- --functional: Generate functional Component instead Class
+    Options:
+    - -t <value>: Template name that you want to use (signin1, signin2, signup1, signup2, forgetpassword, profile1, profile2, profile3, profilesetting, notification, contact, article1, article2, article3, articleview1, articleview2, chat, chatlist, comment, dashboard1, dashboard2, onboarding1, onboarding2, creditcard, gridmenu1, gridmenu2, listmenu, sidemenu, setting, product1, product2, transaction1, transaction2, illustration) 
+    - -redux-plain: Generate Redux that consist of action, and reducer that using plain array data, and plain reducer naming convention, **this will also make your generated screen is using Redux connect**
+    - -redux-promise: Generate Redux that consist of action, and reducer that using redux-promise-middleware, **this will also make your generated screen is using Redux connect**
+    - -redux-thunk: Generate Redux that consist of action, and reducer that using redux thunk, **this will also make your generated screen is using Redux connect**
+    - --functional: Generate functional Component instead Class
 
-2. Generate a new Component
+**2. Generate a new Component**
 
-Usage:
-```rekunative make:component <name> [options]```
+    Usage:
+    ```rekunative make:component <name> [options]```
 
-Options:
-- -t <value>: Template name that you want to use (signin1, signin2, signup1, signup2, forgetpassword, profile1, profile2, profile3, profilesetting, notification, contact, article1, article2, article3, articleview1, articleview2, chat, chatlist, comment, dashboard1, dashboard2, onboarding1, onboarding2, creditcard, gridmenu1, gridmenu2, listmenu, sidemenu, setting, product1, product2, transaction1, transaction2, illustration)
-- -redux-plain: Generate Redux that consist of action, and reducer that using plain array data, and plain reducer naming convention, **this will also make your generated screen is using Redux connect**
-- -redux-promise: Generate Redux that consist of action, and reducer that using redux-promise-middleware, **this will also make your generated screen is using Redux connect**
-- -redux-thunk: Generate Redux that consist of action, and reducer that using redux thunk, **this will also make your generated screen is using Redux connect**
-- --functional: Generate functional Component instead Class
+    Options:
+    - -t <value>: Template name that you want to use (signin1, signin2, signup1, signup2, forgetpassword, profile1, profile2, profile3, profilesetting, notification, contact, article1, article2, article3, articleview1, articleview2, chat, chatlist, comment, dashboard1, dashboard2, onboarding1, onboarding2, creditcard, gridmenu1, gridmenu2, listmenu, sidemenu, setting, product1, product2, transaction1, transaction2, illustration)
+    - -redux-plain: Generate Redux that consist of action, and reducer that using plain array data, and plain reducer naming convention, **this will also make your generated screen is using Redux connect**
+    - -redux-promise: Generate Redux that consist of action, and reducer that using redux-promise-middleware, **this will also make your generated screen is using Redux connect**
+    - -redux-thunk: Generate Redux that consist of action, and reducer that using redux thunk, **this will also make your generated screen is using Redux connect**
+    - --functional: Generate functional Component instead Class
 
-3. Generate a new Redux (action, and reducer)
+**3. Generate a new Redux (action, and reducer)**
 
-Usage:
-```rekunative make:redux <name> [options]```
+    Usage:
+    ```rekunative make:redux <name> [options]```
 
-Options:
-- --action-only: Generate only redux action
-- --reducer-only: Generate only redux reducer
-- -redux-plain: Generate Redux that consist of action, and reducer that using plain array data, and plain reducer naming convention, **this will also make your generated screen is using Redux connect**
-- -redux-promise: Generate Redux that consist of action, and reducer that using redux-promise-middleware, **this will also make your generated screen is using Redux connect**
-- -redux-thunk: Generate Redux that consist of action, and reducer that using redux thunk, **this will also make your generated screen is using Redux connect**
+    Options:
+    - --action-only: Generate only redux action
+    - --reducer-only: Generate only redux reducer
+    - -redux-plain: Generate Redux that consist of action, and reducer that using plain array data, and plain reducer naming convention, **this will also make your generated screen is using Redux connect**
+    - -redux-promise: Generate Redux that consist of action, and reducer that using redux-promise-middleware, **this will also make your generated screen is using Redux connect**
+    - -redux-thunk: Generate Redux that consist of action, and reducer that using redux thunk, **this will also make your generated screen is using Redux connect**
 
 ### Contributor List
 
-- @deceive: Defri Tri as the main contributor
+- @deceive3w: Defri Tri as the main contributor
 - @radiegtya: Ega Radiegtya as the main contributor
