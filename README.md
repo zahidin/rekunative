@@ -30,19 +30,18 @@ You can set any configuration inside .env file, here are the list that you can s
 We use very simple structure to get started with
 
 ```
-.
-+-- rekurn-generator
-+-- src
-|   +-- _navigators
-|   +-- _redux
-    |   +-- actions
-    |   +-- reducers
-    |   +-- middlewares.js
-    |   +-- store.js
-|   +-- components
-|   +-- screens
-+-- App.js
-+-- index.js
+|-- rekurn-generator
+|-- src
+|-- _navigators
+|-- _redux
+    |-- actions
+    |-- reducers
+    |-- middlewares.js
+    |-- store.js
+|-- components
+|-- screens
+|-- App.js
+|-- index.js
 ```
 
 ### Generators
