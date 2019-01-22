@@ -51,7 +51,7 @@ $ react-native run-ios
 We use very simple structure to get started with
 
 ```
-|-- rekurn-generator
+|-- rekunative
 |-- src
     |-- _navigators
     |-- _redux
@@ -117,6 +117,54 @@ Options:
 - -redux-plain: Generate Redux that consist of action, and reducer that using plain array data, and plain reducer naming convention, **this will also make your generated screen is using Redux connect**
 - -redux-promise: Generate Redux that consist of action, and reducer that using redux-promise-middleware, **this will also make your generated screen is using Redux connect**
 - -redux-thunk: Generate Redux that consist of action, and reducer that using redux thunk, **this will also make your generated screen is using Redux connect**
+
+### Contribution Guideline
+
+```
+|-- rekunative
+    |-- template
+        |-- components 
+|-- src
+    |-- screens
+        |-- examples
+```
+
+We need your help to make some components to make our generator works (U can see the list below). Create your components file inside "rekunative/template/components" folder.
+
+|       Components         | Status  |
+|--------------------|:-----:|
+| signin1   |   ✅   |
+| signin2 ||
+| signup2     |      |
+| forgetpassword             |      |
+| profile1             |      |
+| profile2             |      |
+| profile3             |      |
+| profilesetting             |      |
+| contact             |      |
+| article1             |      |
+| article2             |      |
+| article3             |      |
+| articleview1             |      |
+| articleview2             |      |
+| chat             |      |
+| comment             |      |
+| dashboard1             |      |
+| dashboard2             |      |
+| onboarding1             |      |
+| onboarding2             |      |
+| creditcard             |      |
+| gridmenu1             |      |
+| gridmenu2             |      |
+| listmenu             |      |
+| sidemenu             |      |
+| setting             |      |
+| product1             |      |
+| product2             |      |
+| transaction1             |      |
+| transaction2             |      |
+| illustration             |      |
+
 
 ### Contributor List
 
