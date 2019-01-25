@@ -132,7 +132,7 @@ Options:
 
 We need your help to make some components to make our generator works (U can see the list below). Create your components file inside "rekunative/template/components" folder. To test your component, simply add your working class inside "src/screens/examples" folder, don't forget to add the routing inside the "_navigators/index.js" file.
 
-|       Components         | Status  |
+|   Components | Status  |
 |--------------------|:-----:|
 | signin1   |   ✅   |
 | signin2 ||

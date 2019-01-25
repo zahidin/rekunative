@@ -5,14 +5,15 @@ import {
 	TodoAdd,
 	Signin1,
 	Signin2,
-	ForgotPassword
+  Signup1,
+	ForgotPassword,
+  Profile2
 } from '../screens';
 import { createStackNavigator } from 'react-navigation';
 
 const initialRouteName = 'Signin1';
 
-const AppNavigator = createStackNavigator(
-	{
+const AppNavigator = createStackNavigator({
 		Home: {
 			screen: Home
 		},
@@ -25,6 +26,12 @@ const AppNavigator = createStackNavigator(
 		Signin2: {
 			screen: Signin2
 		},
+    Signup1: {
+      screen: Signup1
+    },
+    Profile2: {
+      screen: Profile2    
+    },
 		ForgotPassword: {
 			screen: ForgotPassword
 		},
@@ -38,6 +45,6 @@ const AppNavigator = createStackNavigator(
 	{
 		initialRouteName
 	}
-);
+ })
 
 export default AppNavigator;
