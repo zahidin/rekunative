@@ -1,7 +1,7 @@
-import {Home, Login, TodoList, TodoAdd,Signin1} from '../screens'
+import {Home, Login, TodoList, TodoAdd, Signin1, Signup2} from '../screens'
 import {createStackNavigator} from 'react-navigation'
 
-const initialRouteName = "Signin1"
+const initialRouteName = "Signup2"
 
 const AppNavigator = createStackNavigator({
   Home: {
@@ -12,6 +12,9 @@ const AppNavigator = createStackNavigator({
   },
   Signin1: {
     screen: Signin1    
+  },
+  Signup2: {
+    screen: Signup2    
   },
   TodoList: {
     screen: TodoList    
