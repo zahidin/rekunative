@@ -1,12 +1,7 @@
 import React, {Component} from 'react';
 import {
-    Container,
-    Text,
-    Thumbnail,
-    Button,
-    View,
-    Icon,
-    Content
+    Container, Text, Thumbnail, 
+    Button, View, Icon,Content
 } from 'native-base';
 import {StyleSheet, FlatList, Dimensions} from 'react-native';
 import {Col, Row, Grid} from "react-native-easy-grid";
@@ -26,6 +21,7 @@ const formatData = (data, numColumns) => {
 const numColumns = 3;
 
 export default class Profile2 extends Component {
+
     renderItem = ({item}) => {
         if (item.empty === true) {
             return <View style={[styles.item, styles.itemInvisible]}/>;
@@ -41,12 +37,13 @@ export default class Profile2 extends Component {
     state = {
         modalVisible: false
     }
+
     toggleModal(visible) {
         this.setState({modalVisible: visible});
     }
 
     render() {
-        const {profilePicture, profileName, post, followers, following, image, btnPerson, btnMail, androidRippleColor} = this.props
+        const {profilePicture, profileName, post, followers, following, images, btnPerson, btnMail, androidRippleColor} = this.props
         return (
             <Container>
                 <Content>
@@ -116,15 +113,13 @@ export default class Profile2 extends Component {
                             </Col>
 
                         </Row>
-                        <Row
-                            style={styles.rowPosts}>
-
+                        <Row style={styles.rowPosts}>
                             <FlatList
-                                data={formatData(image, numColumns)}
+                                data={formatData(images, numColumns)}
                                 style={styles.container}
                                 renderItem={this.renderItem}
-                                numColumns={numColumns}/>
-
+                                numColumns={numColumns}
+                            />
                         </Row>
                     </Grid>
                 </Content>
