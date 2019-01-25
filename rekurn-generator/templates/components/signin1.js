@@ -31,8 +31,8 @@ export default class Signin1 extends Component {
             custom
         } = this.props
         return (
-            <Container style={styles.content}>
-                <Content>
+            <Container>
+                <Content style={styles.content}>
                     <Grid>
                         <Row>
                             <Col
@@ -49,17 +49,17 @@ export default class Signin1 extends Component {
                                     }
                                 ]}
                                     source={{
-                                    uri: image.url
+                                    uri: image.url || 'https://i.ibb.co/TBzjW9h/circle-2x.png'
                                 }}/>
                             </Col>
                         </Row>
                         <Row>
                             <Col style={styles.viewBtnSosmed}>
                                 <Button rounded bordered style={styles.btnSosmed} onPress={socmed1.onPress}>
-                                    <Icon name={socmed1.name} type='FontAwesome'/>
+                                    <Icon name={socmed1.name || 'twitter'} type='FontAwesome'/>
                                 </Button>
                                 <Button rounded bordered style={styles.btnSosmed} onPress={socmed2.onPress}>
-                                    <Icon name={socmed2.name} type='FontAwesome'/>
+                                    <Icon name={socmed2.name || 'google'} type='FontAwesome'/>
                                 </Button>
                                 <Button
                                     rounded
@@ -69,7 +69,7 @@ export default class Signin1 extends Component {
                                         marginRight: 0
                                     }
                                 ]}>
-                                    <Icon name={socmed3.name} type='FontAwesome' onPress={socmed3.onPress}/>
+                                    <Icon name={socmed3.name || 'facebook'} type='FontAwesome' onPress={socmed3.onPress}/>
                                 </Button>
                             </Col>
                         </Row>
@@ -78,13 +78,13 @@ export default class Signin1 extends Component {
                                 <Form>
                                     <Item rounded style={styles.itemForm}>
                                         <Input
-                                            placeholder={field1.label}
+                                            placeholder={field1.label || 'Email'}
                                             style={styles.input}
                                             onChangeText={field1.onChangeText}/>
                                     </Item>
                                     <Item rounded style={styles.itemForm}>
                                         <Input
-                                            placeholder={field2.label}
+                                            placeholder={field2.label || 'Password'}
                                             style={styles.input}
                                             secureTextEntry={true}
                                             onChangeText={field2.onChangeText}/>
@@ -101,7 +101,7 @@ export default class Signin1 extends Component {
                                         colors={['#46b6fb', '#2B79C9']}
                                         style={styles.linearGradient}>
                                         <Button block style={styles.btnSubmit} onPress={btnSubmit.onPress}>
-                                            <Text style={styles.txtBtnSubmit}>{btnSubmit.label}</Text>
+                                            <Text style={styles.txtBtnSubmit}>{btnSubmit.label || 'LOGIN'}</Text>
                                         </Button>
                                     </LinearGradient>
                                 </Form>
@@ -120,7 +120,6 @@ export default class Signin1 extends Component {
 }
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
         alignItems: 'center',
         justifyContent: 'center'
     },

@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { StyleSheet, Image } from 'react-native'
+import React, {Component} from 'react'
+import {StyleSheet, Image} from 'react-native'
 import {
     Container,
     Content,
@@ -24,10 +24,13 @@ export default class Signup2 extends Component {
             field1,
             field2,
             field3,
-            field4
+            field4,
+            header
         } = this.props
         return (
-            <Container>
+            <Container style={{
+                backgroundColor: '#0A1042'
+            }}>
                 <Content>
                     <Grid style={styles.container}>
                         <Row>
@@ -43,34 +46,55 @@ export default class Signup2 extends Component {
                                     marginTop: '10%'
                                 }}
                                     source={{
-                                    uri: image.url
+                                    uri: image.url || 'https://i.ibb.co/TBzjW9h/circle-2x.png'
                                 }}/>
                                 <H1
                                     style={{
                                     marginTop: 15,
-                                    fontWeight: 'bold'
-                                }}>Registration</H1>
+                                    fontWeight: 'bold',
+                                    color: header.color
+                                }}>{header.name || 'Registration'}</H1>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
                                 <Form>
                                     <Item rounded style={styles.itemForm}>
-                                        <Input placeholder="Name" onChangeText={field1.onChangeText}/>
-                                    </Item>
-                                    <Item rounded style={styles.itemForm}>
-                                        <Input placeholder="Email" onChangeText={field2.onChangeText}/>
+                                        <Input
+                                            placeholder={field1.label || 'Name'}
+                                            onChangeText={field1.onChangeText}
+                                            style={{
+                                            fontWeight: 'bold',
+                                            color: '#FAFEFE'
+                                        }}/>
                                     </Item>
                                     <Item rounded style={styles.itemForm}>
                                         <Input
-                                            placeholder="Password"
+                                            placeholder={field2.label || 'Email'}
+                                            onChangeText={field2.onChangeText}
+                                            style={{
+                                            fontWeight: 'bold',
+                                            color: '#FAFEFE'
+                                        }}/>
+                                    </Item>
+                                    <Item rounded style={styles.itemForm}>
+                                        <Input
+                                            placeholder={field3.label || 'Password'}
                                             secureTextEntry={true}
+                                            style={{
+                                            fontWeight: 'bold',
+                                            color: '#FAFEFE'
+                                        }}
                                             onChangeText={field3.onChangeText}/>
                                     </Item>
                                     <Item rounded style={styles.itemForm}>
                                         <Input
-                                            placeholder="Confirm Password"
+                                            placeholder={field4.label || 'Confirm Password'}
                                             secureTextEntry={true}
+                                            style={{
+                                            fontWeight: 'bold',
+                                            color: '#FAFEFE'
+                                        }}
                                             onChangeText={field4.onChangeText}/>
                                     </Item>
                                     <LinearGradient
@@ -82,10 +106,10 @@ export default class Signup2 extends Component {
                                         x: 1,
                                         y: 0
                                     }}
-                                        colors={['#46b6fb', '#2B79C9']}
+                                        colors={['#242B7C','#242B7C']}
                                         style={styles.linearGradient}>
                                         <Button block style={styles.btnSubmit} onPress={btnSubmit.onPress}>
-                                            <Text style={styles.txtBtnSubmit}>{btnSubmit.label}</Text>
+                                            <Text style={styles.txtBtnSubmit}>{btnSubmit.label || 'SIGN UP'}</Text>
                                         </Button>
                                     </LinearGradient>
                                 </Form>
@@ -128,6 +152,7 @@ const styles = StyleSheet.create({
             width: 0,
             height: 1
         },
+        borderColor:'#060E3F',
         paddingLeft: 5,
         shadowOpacity: 0.20,
         shadowRadius: 1.41,

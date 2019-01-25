@@ -25,8 +25,12 @@ class Example extends Component {
                 height: 150,
                 width: 150
             },
+            header:{
+                name:'Registration',
+                color:'#FAFEFE'
+            },
             field1: {
-                label: 'Email',
+                label: 'Name',
                 onChangeText: (val) => {
                     this.setState({
                         name:val
@@ -69,13 +73,13 @@ class Example extends Component {
                     alignItems:'center',
                     justifyContent:'center',
                 }}>
-                    <Text>Alredy have an account ?</Text>
+                    <Text style={{color:'#FAFEFE'}}>Alredy have an account ?</Text>
                     <TouchableOpacity onPress={()=>this.props.navigation.navigate('Signin1')}>
                         <Text
                             style={{
                             fontWeight: 'bold',
-                            color: 'black',
-                            fontWeight:'bold'
+                            fontWeight:'bold',
+                            color:'#FAFEFE'
                         }}> Sign In Now</Text>
                     </TouchableOpacity>
                 </View>
