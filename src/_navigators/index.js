@@ -11,7 +11,7 @@ import {
 } from '../screens';
 import { createStackNavigator } from 'react-navigation';
 
-const initialRouteName = 'Signin1';
+const initialRouteName = 'ForgotPassword';
 
 const AppNavigator = createStackNavigator({
 		Home: {
@@ -41,10 +41,8 @@ const AppNavigator = createStackNavigator({
 		TodoAdd: {
 			screen: TodoAdd
 		}
-	},
-	{
+	},{
 		initialRouteName
-	}
- })
+	})
 
 export default AppNavigator;

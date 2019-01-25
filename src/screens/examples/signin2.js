@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Signin2 from '../../../rekurn-generator/components/signin2';
+import Signin2 from '../../../rekurn-generator/templates/components/signin2';
 import { View, Text, TouchableOpacity } from 'react-native';
 
-import logo from '../../resources/img/logo-rekeningku.png';
 
-class Signin extends Component {
+class Signin2Example extends Component {
 	static navigationOptions = {
 		header: null
 	};
@@ -12,7 +11,6 @@ class Signin extends Component {
 	render() {
 		return (
 			<Signin2
-				logo={logo}
 				image={{
 					url: { uri: 'https://i.ibb.co/TBzjW9h/circle-2x.png' },
 					height: 190,
@@ -85,4 +83,4 @@ class Signin extends Component {
 	}
 }
 
-export default Signin;
+export default Signin2Example

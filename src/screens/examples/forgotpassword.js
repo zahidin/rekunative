@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import FPassword from '../../../rekurn-generator/components/forgotpassword';
+import ForgotPassword from '../../../rekurn-generator/templates/components/forgotpassword';
 
-class ForgotPassword extends Component {
+class ForgotPasswordExample extends Component {
 	static navigationOptions = {
 		header: null
 	};
 	render() {
 		return (
-			<FPassword
+			<ForgotPassword
 				image={{
 					url: { uri: 'https://images.rekeningku.com/icons/safe.png' },
 					height: 100,
@@ -30,4 +30,4 @@ class ForgotPassword extends Component {
 	}
 }
 
-export default ForgotPassword;
+export default ForgotPasswordExample;
